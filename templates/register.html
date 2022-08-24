@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+{% load crispy_forms_tags %}
+    <h3 class="about-h3">Kayıt Ol</h3>
+    <hr>
+    <form method = "post" class="about-p-1">
+        {% csrf_token %}
+        {{form|crispy}}
+        <br>
+        <button type="submit" class="btn btn-primary mb1 bg-blue" class="button">Kayıt Ol</button>
+    </form>
+{% endblock body %} 

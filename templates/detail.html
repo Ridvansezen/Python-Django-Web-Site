@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="row">
+    <div class="col-lg-8">
+        <!-- Post content-->
+        <article>
+            <!-- Post header-->
+            <header class="mb-4">
+                <!-- Post title-->
+                <div class="article-details">
+                    <h1 class="fw-bolder mb-1">{{article.title}}</h1>
+                </div>
+                <!--Post Author-->
+                <p class="article-details">Yazar :&nbsp; {{article.author}} </p>
+                <!-- Post meta content-->
+                <div class="article-details">Oluşturulduğu Tarih : &nbsp; {{article.created_date}} </div>
+            </header>
+            <hr>
+            <!-- Preview image figure-->
+            <!--<figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>-->
+            <!-- Post content-->
+            <p class="article-details">
+                {{article.content}}
+
+            </p>
+        </article>
+    </div>
+</div>
+{% endblock body %} 

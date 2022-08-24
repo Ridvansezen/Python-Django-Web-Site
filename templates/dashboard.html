@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h3 class="dash-h3">Kontrol Paneli</h3>
+    <hr>
+    <p class="dash-p">Hoşgeldiniz , {{request.user.username}}</p>
+    <hr>
+    <div class="dash-button">
+        <a class="btn btn-primary mb1 bg-blue" href="/articles/addarticle">Makale Ekle</a>
+    </div>
+    {% if articles %}
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Başlık</th>
+            <th scope="col">Yazar</th>
+            <th scope="col">Oluşturulduğu Tarih</th>
+            <th scope="col">Düzenle</th>
+            <th scope="col">Sil</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for article in articles  %}
+            <tr>  
+               <th scope="row">{{article.id}}</th>
+               <td><a href="/articles/article/{{article.id}}">{{article.title}}</a></td>
+               <td>{{article.author.username}}</td>
+               <td>{{article.created_date}}</td>
+               <td><a href="/articles/edit/{{article.id}}" class="btn btn-primary mb1 bg-blue">Düzenle</a></td>
+               <td><a href="/articles/delete/{{article.id}}" class="btn btn-danger">Sil</a></td>
+            </tr>
+            {% endfor %}
+          <!---<tr>  
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>-->
+        </tbody>
+      </table>
+    {% else %}
+        <div class="dash-alert-message">
+            <div class="alert alert-danger">
+                Henüz bir makaleniz bulunmuyor...
+            </div>
+        </div>
+    {% endif %}
+    
+   
+{% endblock body %}

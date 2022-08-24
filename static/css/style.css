@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url('/static/img/sunset\ bg.jpg');
+    background-size: cover;
+}
+
+.container {
+    margin-top: 120px;
+}
+.menu-bar {
+    background-color: #3b3b3b !important;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;  
+
+}
+.menu-bar ul li {
+    width: 100px;
+    padding-top: 13px;
+}
+.left-side {
+    padding-left: 20px;
+}
+.menu-bar .right-side1 {
+    padding-left: 600px;
+}
+.menu-bar .right-side2 {
+    padding-left: 460px;
+}
+.right-side {
+    margin-right: 410px;
+
+}
+.loggedusername {
+    color: #fff;
+    margin-right: 440px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+.anasayfa {
+    position: absolute;
+    width: 8%;
+    margin-top: -5px;
+    left: 15px;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+
+}
+
+.anasayfa, .menu-bar ul li a:hover {
+    background: #6b6b6b;
+    background-position: center;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 5px;
+}
+.sub-menu {
+    display:none ;
+}
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: #3b3b3b;
+    margin-top: 15px;
+    margin-left: -7px;
+}
+.menu-bar ul li:hover .sub-menu ul {
+    display: block;
+
+}
+.about-h3 {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: #6b6b6b;
+    background-position: center;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 5px;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -80px;
+    outline-color: black;
+    outline-style: solid;
+
+}
+body .dash-h3 {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: #6b6b6b;
+    background-position: center;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -80px;
+    outline-color: black;
+    outline-style: solid;
+
+}
+body .dash-p {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: #6b6b6b;
+    background-position: center;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    outline-color: black;
+    outline-style: solid;
+
+}
+div .dash-button a {
+    width: 220px;
+    margin-left: 446px;
+    margin-top: 30px;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+}
+.table {
+    background-color: #adadad;
+    margin-top: 60px;
+    outline-color: black;
+    outline-style: solid;
+    border-radius: 8px;
+}
+div .dash-alert-message {
+    margin-top: 70px;
+}
+.article-details {
+    color: #000000;
+}
+.about-p {
+    text-align: center;
+    font-size: 14pt;
+    color: #ffffff;
+    background: #6b6b6b;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 15px;
+    width: 1080px;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    outline-color: black;
+    outline-style: solid;
+}
+.about-p-1 {
+    text-align: left;
+    font-size: 14pt;
+    color: #fff;
+    background: #6b6b6b;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 25px;
+    width: 1080px;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    outline-color: black;
+    outline-style: solid;
+}
+.about-p-1 button {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 440px;
+}
+.about-p-2 {
+    text-align: left;
+    font-size: 14pt;
+    color: #fff;
+    background: #6b6b6b;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 25px;
+    width: 1080px;
+    height: 300px;
+    margin-left: -260px;
+    justify-content: center;
+    margin-top: 40px;
+    outline-color: black;
+    outline-style: solid;
+}
+.about-p-3 {
+    text-align: left;
+    font-size: 14pt;
+    color: #fff;
+    background: #6b6b6b;
+    border-radius: 8px;
+    border-right: 10px;
+    padding: 25px;
+    width: 1080px;
+    height: 500px;
+    margin-left: -260px;
+    justify-content: center;
+    margin-top: 20px;
+    outline-color: black;
+    outline-style: solid;
+}
+div .dash-article-button {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+.about-p-2 button {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 440px;
+}

@@ -1,0 +1,33 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="menu-bar">
+  <ul class="left-side">
+      <li><a class="anasayfa" href="/">Rıdvan Sezen</a></li>
+      <li><a class="text" href="/">Anasayfa</a></li>
+      <li><a class="text" href="/about">Hakkımda</a></li>
+      <li><a class="text" href="/projects">Projeler</a></li>
+      <li><a class="text" href="/articles">Makaleler</a></li>
+  </ul>
+  {% if request.user.is_authenticated %}
+  <div class="menu-bar">
+    <ul class="right-side2">
+      <li><a class="text" href="/articles/dashboard">Kontrol Paneli</a></li>
+      <li><a class="text" href="/user/logout">Çıkış Yap</a></li>
+    </ul>
+  </div>
+  <div class="loggedusername">
+    Giriş yapıldı : &nbsp;&nbsp;{{request.user.username}}
+  </div>
+  {% else %}
+  <div class="menu-bar">
+    <ul class="right-side1">
+      <li><a class="text" href="/user/login">Giriş Yap</a></li>
+    </ul>
+    <ul class="right-side">
+      <li class="register"><a href="/user/register">Kayıt Ol</a></li>   
+    </ul>
+  </div>  
+  {% endif %}
+</div>
