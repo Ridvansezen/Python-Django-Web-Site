@@ -27,8 +27,8 @@
                <td><a href="/articles/article/{{article.id}}">{{article.title}}</a></td>
                <td>{{article.author.username}}</td>
                <td>{{article.created_date}}</td>
-               <td><a href="/articles/edit/{{article.id}}" class="btn btn-primary mb1 bg-blue">Düzenle</a></td>
-               <td><a href="/articles/delete/{{article.id}}" class="btn btn-danger">Sil</a></td>
+               <td><a href="/articles/editarticle/{{article.id}}" class="btn btn-primary mb1 bg-blue">Düzenle</a></td>
+               <td><a href="/articles/deletearticle/{{article.id}}" class="btn btn-danger">Sil</a></td>
             </tr>
             {% endfor %}
           <!---<tr>  

@@ -27,4 +27,8 @@ urlpatterns = [
     path('articles/dashboard/', views.dashboard,name="dashboard"),
     path('articles/addarticle/', views.addarticle,name="addarticle"),
     path('articles/article/<int:id>', views.detail,name="detail"),
+    path('articles/editarticle/<int:id>', views.editarticle,name="editarticle"),
+    path('articles/deletearticle/<int:id>', views.deletearticle,name="deletearticle"),
+    
+    path('auth/', include('allauth.urls')),
 ]
